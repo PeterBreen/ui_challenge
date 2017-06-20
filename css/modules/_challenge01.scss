@@ -1,7 +1,15 @@
 .signup-container {
   display: grid;
   grid-template-columns: repeat(6, 60px);  //defines 6-wide grid, 60px ea.
-  grid-column-gap: 20px; //sets gutter value
+  grid-gap: 20px; //sets gutter value
   justify-content: center; // centers grid horizontally
   align-content: start; // top-aligns grid vertically
+}
+
+.box {
+  background-color: $backgroundgray;
+  color: $maintext;
+  border-radius: 2px;
+  height: 40px;
+  text-align: center;
 }

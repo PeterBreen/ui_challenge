@@ -45,11 +45,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  margin: 40px; }
+
+.index-container h1 {
+  font-size: 36px;
+  margin-bottom: 36px; }
+
+.index-container p {
+  line-height: 1.5;
+  margin: 0.5rem; }
+
+.index-container ul {
+  list-style-type: disc;
+  padding: 5px 0;
+  margin: 0 36px; }
+
 .signup-container {
   display: grid;
   grid-template-columns: repeat(6, 60px);
-  grid-column-gap: 20px;
+  grid-gap: 20px;
   justify-content: center;
   align-content: start; }
+
+.box {
+  background-color: #eaebee;
+  color: #222;
+  border-radius: 2px;
+  height: 40px;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
