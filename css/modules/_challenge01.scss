@@ -4,10 +4,49 @@
   grid-template-rows: auto; //auto height for grid rows
   grid-gap: 20px; //sets gutter value
   justify-content: center; // centers grid horizontally
+  box-shadow: $shadowval;
+  border-radius: 2px;
+}
+.title-img img {
+  margin: 0 auto;
+  display: block;
+}
+.password-warn {
+  font-size: 14px;
 }
 
 .box {
   background-color: $backgroundgray;
   color: $maintext;
-  border-radius: 2px;
+  padding: 30px 60px;
 }
+.box h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.box h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.box input {
+  width: 300px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  display: block;
+}
+.box button {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 15px;
+  box-shadow: $shadowval;
+  width: 160px;
+  line-height: 1.5;
+  background-color: $linkcolor;
+  color: $buttontext;
+  border-radius: 4px;
+}
+
+//I built the box on a 12 column grid with 60px columns and 20px gutters, the outer box is 6 columns wide, 460px
+//the input fields are 4 columns wide, the text and input fields are all indented 1 column inside the outer box.
+// The logo is horizontally centered on the page.
