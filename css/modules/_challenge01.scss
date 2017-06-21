@@ -4,12 +4,11 @@
   grid-template-rows: auto; //auto height for grid rows
   grid-gap: 20px; //sets gutter value
   justify-content: center; // centers grid horizontally
-  box-shadow: $shadowval;
-  border-radius: 2px;
 }
 .title-img img {
   margin: 0 auto;
   display: block;
+  padding-bottom: 30px;
 }
 .password-warn {
   font-size: 14px;
@@ -19,6 +18,8 @@
   background-color: $backgroundgray;
   color: $maintext;
   padding: 30px 60px;
+  box-shadow: $shadowval;
+  border-radius: 2px;
 }
 .box h2 {
   font-size: 28px;
