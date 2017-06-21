@@ -50,6 +50,9 @@ html {
   font-size: 16px;
   margin: 40px; }
 
+.index-container {
+  margin: 40px; }
+
 .index-container h1 {
   font-size: 36px;
   margin-bottom: 36px; }
@@ -65,16 +68,14 @@ html {
 
 .signup-container {
   display: grid;
-  grid-template-columns: repeat(6, 60px);
+  grid-template-columns: 460px;
+  grid-template-rows: auto;
   grid-gap: 20px;
-  justify-content: center;
-  align-content: start; }
+  justify-content: center; }
 
 .box {
   background-color: #eaebee;
   color: #222;
-  border-radius: 2px;
-  height: 40px;
-  text-align: center; }
+  border-radius: 2px; }
 
 /*# sourceMappingURL=style.css.map */
