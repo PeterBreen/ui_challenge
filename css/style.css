@@ -111,7 +111,7 @@ button {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
-  display: block; }
+  display: inline-block; }
 
 .box button {
   display: block;
@@ -127,5 +127,13 @@ button {
 
 .box a {
   color: #871423; }
+
+.valid::after {
+  content: '\2713';
+  font-size: 24px;
+  color: green;
+  display: inline-block;
+  padding-left: 10px;
+  clear: right; }
 
 /*# sourceMappingURL=style.css.map */
