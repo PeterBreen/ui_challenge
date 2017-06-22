@@ -49,6 +49,10 @@ html {
   font-family: Lato, sans-serif;
   font-size: 16px; }
 
+button {
+  border-width: 0;
+  border-style: none; }
+
 .italic {
   font-style: italic; }
 
@@ -84,7 +88,8 @@ html {
   padding-bottom: 30px; }
 
 .password-warn {
-  font-size: 14px; }
+  font-size: 14px;
+  padding-bottom: 4px; }
 
 .box {
   background-color: #eaebee;
@@ -113,10 +118,14 @@ html {
   font-size: 18px;
   margin-bottom: 15px;
   box-shadow: 0px 1px 3px 0px #4c4c4c;
-  width: 160px;
-  line-height: 1.5;
+  width: 220px;
+  line-height: 1;
+  padding: 15px 0;
   background-color: #871423;
   color: #fcfdff;
   border-radius: 4px; }
+
+.box a {
+  color: #871423; }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,6 +12,7 @@
 }
 .password-warn {
   font-size: 14px;
+  padding-bottom: 4px;
 }
 
 .box {
@@ -41,12 +42,23 @@
   font-size: 18px;
   margin-bottom: 15px;
   box-shadow: $shadowval;
-  width: 160px;
-  line-height: 1.5;
+  width: 220px;
+  line-height: 1;
+  padding: 15px 0;
   background-color: $linkcolor;
   color: $buttontext;
   border-radius: 4px;
 }
+
+.box a {
+  color: $linkcolor;
+}
+// .box a:visited {
+//   color:
+// }
+// .box a:hover {
+//   color:
+// }
 
 //I built the box on a 12 column grid with 60px columns and 20px gutters, the outer box is 6 columns wide, 460px
 //the input fields are 4 columns wide, the text and input fields are all indented 1 column inside the outer box.
