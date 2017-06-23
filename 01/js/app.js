@@ -1,18 +1,19 @@
-//sets input event handlers for as-you-type validation
+//creates multiple event handlers for as-you-type validation
 function setHandler(domId, handler) {
   let el = document.getElementById(domId);
 ['change', 'keyup', 'cut'].forEach(event => el.addEventListener(event, handler));
 }
 
 
-//based on https://stackoverflow.com/questions/46155/validate-email-address-in-javascript
+//regex validator for email address based on https://stackoverflow.com/questions/46155/validate-email-address-in-javascript
+// NOTE: nowhere close to actually validating, but that's complicated (see RFC 2822)
 function validateEmail(input) {
   input.type = 'email';
-  var result = typeof input.checkValidity == 'function' ? input.checkValidity() : /\S+@\S+\.\S+/.test(input);
+  let result = typeof input.checkValidity == 'function' ? input.checkValidity() : /\S+@\S+\.\S+/.test(input);
   return result;
 }
 
-//determine if email input even vaguely resembles an actual address - not really validating (see RFC 2822)
+//run email validator function, set checkmark state for email address if it passes
 function checkEmail() {
   if (validateEmail(this.value) === true) {
     setAccepted('email-validated');
@@ -30,6 +31,7 @@ function checkPassword() {
   }
 }
 
+//reusable function to add or remove valid class
 function setAccepted(spanId) {
   let el = document.getElementById(spanId);
   el.classList.add('valid');
@@ -39,6 +41,6 @@ function setUnaccepted(spanId) {
   el.classList.remove('valid');
 }
 
-
+//set event handlers
 setHandler('email-form', checkEmail)
 setHandler('password-form', checkPassword)
